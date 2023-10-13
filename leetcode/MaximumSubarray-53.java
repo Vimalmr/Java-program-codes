@@ -1,3 +1,4 @@
+// Kadane’s Algorithm
 class Solution {
     public int maxSubArray(int[] nums) {
         int n=nums.length,max=Integer.MIN_VALUE,me=0;
