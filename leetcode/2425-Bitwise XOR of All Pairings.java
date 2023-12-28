@@ -1,0 +1,19 @@
+class Solution {
+    public int xorAllNums(int[] nums1, int[] nums2) {
+        int v1=0,v2=0;
+        int n1 = nums2.length % 2, n2 = nums1.length % 2;
+        for(int i: nums1){
+            v1 = v1 ^ i;
+            if(n1==0){
+                v1 = v1 ^ i;
+            }
+        }
+        for(int i: nums2){
+            v2 = v2 ^ i;
+            if(n2==0){
+                v2 = v2 ^ i;
+            }
+        }
+        return v1^v2;
+    }
+}
